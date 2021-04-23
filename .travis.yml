@@ -1,1 +1,7 @@
 language: python
+jobs:
+  include:
+  - name: "3.9 Unit Test"
+    python: "3.9"
+    env: TEST_SUITE=suite_3_9_unit
+script: ./test_decode.py $TEST_SUITE
